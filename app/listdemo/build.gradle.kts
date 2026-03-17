@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace = "ca.qc.chc.andriond.nagivationapp"
+    namespace = "ca.qc.chc.andriond.listdemo"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "ca.qc.chc.andriond.nagivationapp"
+        applicationId = "ca.qc.chc.andriond.listdemo"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
@@ -55,5 +55,4 @@ dependencies {
     debugImplementation(libs.androidx.compose.ui.test.manifest)
     implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.compose.material.icons.extended)
-
 }
