@@ -8,9 +8,9 @@ import java.io.ObjectOutputStream
 
 const val FILE_NAME = "todolist.dat"
 
-fun writeData(items : SnapshotStateList<String>, context : Context){
+fun writeData(items: SnapshotStateList<String>, context: Context) {
 
-    val fos = context.openFileOutput(FILE_NAME,Context.MODE_PRIVATE)
+    val fos = context.openFileOutput(FILE_NAME, Context.MODE_PRIVATE)
     val oas = ObjectOutputStream(fos)
     val itemList = ArrayList<String>()
     itemList.addAll(items)
@@ -18,13 +18,14 @@ fun writeData(items : SnapshotStateList<String>, context : Context){
     oas.close()
 
 }
-fun readData(context: Context) : SnapshotStateList<String>{
-    var itemList : ArrayList<String>
+
+fun readData(context: Context): SnapshotStateList<String> {
+    var itemList: ArrayList<String>
     try {
         val fis = context.openFileInput(FILE_NAME)
         val ois = ObjectInputStream(fis)
         itemList = ois.readObject() as ArrayList<String>
-    }catch (e : FileNotFoundException){
+    } catch (e: FileNotFoundException) {
         itemList = ArrayList()
     }
     val items = SnapshotStateList<String>()
