@@ -1,7 +1,6 @@
 package ca.qc.chc.andriond.nagivationapp
 
 
-import ca.qc.chc.andriond.nagivationapp.ui.theme.NavigationExampleTheme
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -17,6 +16,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
+import ca.qc.chc.andriond.nagivationapp.ui.theme.NavigationExampleTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
