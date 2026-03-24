@@ -153,7 +153,7 @@ fun MainPage() {
                     .weight(3F)
                     .height(60.dp),
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = colorResource(id = R.color.purple_500),
+                    containerColor = colorResource(id = R.color.green),
                     contentColor = Color.White
                 ),
                 shape = RoundedCornerShape(5.dp),
